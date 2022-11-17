@@ -29,6 +29,10 @@ The structure is simple.
 ```
     deploy
       |
+      +---default.config
+      |          |
+      |          +--- nuget-package-config.yml
+      |
       +--- <portfolio1>
       |          |
       |          +--- <product1>
