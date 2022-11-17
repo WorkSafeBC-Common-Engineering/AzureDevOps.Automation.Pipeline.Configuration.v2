@@ -1,0 +1,44 @@
+variables:
+
+# -----------------------------------------------------------------------------------------------------
+# Blueprint: azure-function
+#
+# If you are not going to use all stages, as below, you should delete the ones that you don't need.
+
+# -----------------------------------------------------------------------------------------------------
+# CI
+# -----------------------------------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------------------------------
+# Security Scans Stage
+# -----------------------------------------------------------------------------------------------------
+
+  # -----------------------------------------------------------------------------------------------------
+# Security Review Stage
+# -----------------------------------------------------------------------------------------------------
+- name:  securityReviewStageEnvName
+  value: 'SHARED_SR'
+
+# -----------------------------------------------------------------------------------------------------
+# System Test Stage
+# -----------------------------------------------------------------------------------------------------
+- name:  systemTestStageName
+  value: 'SystemTest' # Do not change stage name value
+- name:  systemTestStageEnvName
+  value: '<TBD>'
+- name:  systemTestStageVmImage
+  value: '<TBD>'
+- name:  systemTestTargetFeed
+  value: '<TBD>'
+
+# -----------------------------------------------------------------------------------------------------
+# Production Stage
+# -----------------------------------------------------------------------------------------------------
+- name:  productionStageName
+  value: 'Production' # Do not change stage name value
+- name:  systemTestStageEnvName
+  value: '<TBD>'
+- name:  systemTestStageVmImage
+  value: '<TBD>'
+- name:  systemTestTargetFeed
+  value: '<TBD>'
